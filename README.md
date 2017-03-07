@@ -11,11 +11,10 @@ https://standards.usa.gov/
 generator.html can be opened in any modern Web Browser. It has been tested in 
 - Firefox ESR 45.2.0
 
-
-A demo page can be found on the Internet at http://www.enterprivacy.com/generator.html
+The generator is avalibale in this Github repository or on the Internet at http://www.enterprivacy.com/generator.html
 An accompanying slide 
 
-The Github repository is available at 
+The Github repository is available at https://github.com/privacymaverick/mpn-generator
 
     Framework, library, or plugin file(s) for the MPN generator.
     ReadMe file that documents usage and installation instructions and system requirements (including supported browsers).
