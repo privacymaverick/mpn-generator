@@ -13,6 +13,8 @@ generator.html can be opened in most major modern Web Browsers with HTML5 suppor
 
 The generator is avalibale in this Github repository (https://github.com/privacymaverick/mpn-generator) or on the Internet at http://www.enterprivacy.com/generator.html
 
+When downloading the generator to a local computer, you should download the js and graphics folders as well. These folders contain required javacript and graphics necessary for the generator. The graphics are also required for the resulting privacy notice. 
+
 Once the generator HTML file is opened, the health care developer should follow the instructions in the generator page
 
 1.  Complete the form on the left side of the screen. Your privacy notice will be generated on the right side of the screen as you complete the form.
@@ -20,4 +22,4 @@ Once the generator HTML file is opened, the health care developer should follow 
 3.  You should review the generated notice for accuracy and completeness.
 4.  You should seek the advice of legal counsel before using the notice as it may affect your legal rights. This form is not meant to offer or provide any legal advice.
 
-The resulting privacy notice will be displayed on the left side of the screen. For the convenience of the developer, the complete code is provided in a text box at the bottom of the page. The developer should copy and paste this HTML5 code into a webpage on their website and link to this site from your mobile health app. The developer can further customize the generated HTML5 to include style consistent with the developer's site or mobile app. 
+The resulting privacy notice will be displayed on the left side of the screen. For the convenience of the developer, the complete code is provided in a text box at the bottom of the page. The developer should copy and paste this HTML5 code into a webpage on their website and link to this site from your mobile health app. The developer can further customize the generated HTML5 to include style consistent with the developer's site or mobile app. You must also include the graphic images in the graphics folder from this repository. If you place these in a different folder on your site, you must change the appropriate image sources in the privacy notice. 
