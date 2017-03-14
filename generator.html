@@ -1,0 +1,1881 @@
+<!doctype html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+	integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+	crossorigin="anonymous"></script>
+
+	<title>Model Policy Notice Generator</title>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<script src="js/linkify.js"></script>
+	<script src="js/linkify-string.js"></script>
+
+
+	
+	<style>
+	fieldset {border-bottom: 1px solid gray; margin: 15px 10px 25px 10px;}
+	legend {font-size: medium;}
+	img {display: block; max-width:60px; max-height:80px; margin:auto;}
+	textarea {width:100%;}
+	.panel-heading {padding: 0px; margin: 0px; text-align:center;}
+	.panel-title {font-size:24px;}
+	.panel {font-size:16px;}
+	.tight {padding: 0px; margin: 0px;}
+	.center {text-align: center;}
+	.ui-button {text-align:left; width: 500px;}
+	.match {height: 500px;}
+	.match-medium {height: 820px;}
+	.match-large {height:1050px;}
+	p {font-size: 12pt;}
+	label input {border-top: none; 
+			border-right:none; 
+			border-left:none;
+			background-color:transparent;
+			color: black;}
+	button {margin: auto; margin-top: 5px; }
+	.btn{ font-size:14px; color: #317ab9;}
+	.btn:hover {color: #317ab9; text-decoration:underline;}
+	.glyphicon-info-sign {vertical-align:super; font-size:80%; color:rgb(49, 112, 143);} 
+	div {margin: auto;}
+	img.other {float: left; max-height:100px;}
+	ul {margin-left:75px; margin-top: 15px; font-size:16px}
+	ol {margin-left:25px; margin-top: 15px; font-size:16px}
+	a {color: #317ab9;}
+	span.linklike {color: #317ab9; cursor:pointer; }
+	span.linklike:hover {text-decoration: underline; text-decoration-line:underline; text-decoration-style:solid;}
+	 </style>
+</head>
+
+<body>
+<div class="container">
+
+
+
+<div class="row panel panel-primary">
+  <div class="col-xs-12 page-header panel-heading">
+	 <img alt="" src="graphics/our-policy.png" style="display: initial; float:right; max-width:200px; max-height:200px; margin-right:50px;"/>
+
+<h1 style="font-size:400%;">Privacy Notice Generator</h1>
+  </div>
+<div class="col-xs-12 alert-warning">
+
+	<h3>Preamble for Health Technology Developers</h3>
+</div>
+  <div class="col-md-4">
+    <h3>What is the Model Notice (MPN)?</h3>
+    <p>The MPN is a voluntary, openly available resource to help health  technology developers who collect digital <span class="linklike" title="Health data can include, but is not limited to: wellness information (e.g., exercise or fitness habits, nutrition, or  sleep data), health markers (e.g., blood pressure, BMI, or glucose), information on physical or mental health  conditions, insurance or health care information, or information that integrates into or receives information from a  personal health record.">health data</span> clearly convey information about their privacy policies to their users. Similar to a nutritional label, the MPN provides a snapshot of a company’s existing privacy and security policies to encourage transparency and help 
+consumers make informed choices when selecting products. The MPN does not mandate specific policies or substitute for more comprehensive or detailed privacy policies.</p>
+    <h3>Who is the MPN for?</h3>
+    <p>The MPN is for health technology developers whose technology or app uses and/or shares users’ <span class="linklike" title="Health data can include, but is not limited to: wellness information (e.g., exercise or fitness habits, nutrition, or  sleep data), health markers (e.g., blood pressure, BMI, or glucose), information on physical or mental health  conditions, insurance or health care information, or information that integrates into or receives information from a  personal health record.">health data</span></p>
+  </div>
+  <div class="col-md-4">
+    <h3>What laws might apply to you?</h3>
+    <p>Health technology developers should consult the Federal Trade Commission (FTC)’s <a href="https://www.ftc.gov/tips-advice/business-center/guidance/mobile-health-apps-interactive-tool">Mobile Health Apps Interactive Tool</a> (which was developed in conjunction with the following Department of Health and Human Services offices and agency: ONC, Office for Civil Rights (OCR), and the Food and Drug Administration (FDA)) to determine if they need to comply with the FTC Act, the FTC’s Health Breach Notification Rule, HHS’s Health Insurance Portability and Accountability Act (HIPAA) Privacy, Security and Breach Notification Rules, or FDA rules implementing the Federal Food, Drug & Cosmetic Act, as applicable. This tool is not meant to be legal advice about all compliance obligations, but identifies relevant laws and regulations from these three federal agencies.</p>
+  </div>
+  <div class="col-md-4">
+    <h3>Does use of this MPN satisfy HIPAA requirements to provide a notice of privacy practices? </h3>
+    <p>No. The MPN does not ensure compliance with HIPAA or any other law. However, the MPN may be used, as applicable, in conjunction with a HIPAA notice of privacy practices (please see MPN). To find more information on HIPAA directed towards health technology developers, visit the <a href="https://hipaaqsportal.hhs.gov/">HIPAA Q’s Portal for Health App Developers</a>.</p>
+  </div>
+</div>
+
+
+<div class="row">
+<div class="panel panel-danger">
+	<div class="panel-heading">
+              <h1 class="panel-title">Developer Instructions</h1>
+</div>
+<div class="panel-body">
+<ol>
+<li>Complete the form on the left side of the screen. Your privacy notice will be generated on the right side of the screen as you complete the form. </li>
+<li>All sections should be completed. Incomplete sections will be identified as <span class="label label-danger">Section Incomplete</span></li>
+<li>You should review the generated notice for accuracy and completeness.</li>
+<li>You should seek the advice of legal counsel before using the notice as it may affect your legal rights. This form is not meant to offer or provide any legal advice.</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-xs-12 col-md-6" style="padding-right:10px">
+
+
+<form name="MPN-generator" id="MPN-generator" style="padding-right:20px">
+
+
+
+
+<div class="row panel panel-primary">
+<div class="col-xs-12 panel-heading" id="MPN">
+  <h1><strong>Privacy Notice Generator</strong></h1>
+	<h1>&nbsp;</h1>
+ </div>
+</div>
+
+
+<div class="panel panel-primary match" id="generator-HIPAA">
+	<div class="panel-heading">
+              <h3 class="panel-title">HIPAA</h3>
+        </div>
+	<div class="panel-body">
+		<fieldset>
+		Are you a HIPAA covered entity? (Consult your legal counsel for advice.)
+<label for="HIPAA-entity2">No</label><input type="radio" name="HIPAA-entity" id="HIPAA-entity2"><label for="HIPAA-entity">Yes</label><input type="radio" name="HIPAA-entity" id="HIPAA-entity">
+		</fieldset>
+		<fieldset id="HIPAA-yes">
+		<legend>Please select one of the following statements</legend>
+		<input type="radio" name="HIPAA" id="HIPAA1">
+			<label for="HIPAA1">Please note that the health data we collect as part of this <input type="text" name="product_name1" id="product_name1" placeholder="[insert name of technology product]" size=30 /> are not protected by HIPAA and our company’s HIPAA Notice of Privacy Practices does not apply. </label>
+		<input type="radio" name="HIPAA" id="HIPAA2">
+			<label for="HIPAA2" >Some of the health data we collect as part of this <input type="text" name="product_name2" id="product_name2" placeholder="[insert name of technology product]" size=30 /> also are protected by HIPAA. Read our HIPAA Notice of Privacy Practices for more information.</label>
+<label for="HIPAA-link" id="HIPAA-link-label">HIPAA Notice of Privacy Practices link</label><input type="text" name="HIPAA-link" id="HIPAA-link" pattern="https?://.+" title="Include http:// or https://" />
+		</fieldset>
+
+</div>
+</div>
+
+
+
+<div class="panel panel-primary match-medium" id="generator-USE">
+	<div class="panel-heading">
+              <h3 class="panel-title">Use</h3>
+        </div>
+	<div class="panel-body">
+<fieldset> 
+<legend>Why does this technology collect and use identifiable data<span class="glyphicon glyphicon-info-sign" aria-hidden="true"  title="Identifiable data means data, such as your name, phone number, email, address, health services, information on your physical or mental health conditions, or your social security number, that can be used on its own or with other information to identify you." style="display:inline;"></span>:</legend>
+<input type="checkbox" name="use-purpose1" id="use-purpose1">
+<label for="use-purpose1">To provide the primary service of the app or technology</label><br>
+
+<label for="use-primary-clarification" id="use-primary-clarification-label">Primary Service </label><input type="text" name="use-primary-clarification" id="use-primary-clarification" placeholder="Enter if primary service would be unclear to average user" size="45">
+
+<input type="checkbox" name="use-purpose2" id="use-purpose2">
+<label for="use-purpose2">To develop marketing materials for our products</label><br>
+<input type="checkbox" name="use-purpose3" id="use-purpose3">
+<label for="use-purpose3">To conduct scientific research</label><br>
+<input type="checkbox" name="use-purpose4" id="use-purpose4">
+<label for="use-purpose4">For company operations (e.g., quality control or fraud detection)</label><br>
+<input type="checkbox" name="use-purpose5" id="use-purpose5">
+<label for="use-purpose5">To develop and improve new and current products and services (e.g., analytics)</label><br>
+<input type="checkbox" name="use-purpose6" id="use-purpose6">
+<label for="use-purpose6">Other</label><br>
+<input type="text" name="use_other" id="use-other-freeform1" placeholder='Enter other purpose for which you use identifiable data' size="50">
+<span  id="use-other-add" class="glyphicon glyphicon-plus-sign" aria-hidden="true" title="" style="display:inline;"></span><span class="sr-only" id="use-other-add-screenreader">Add additional other purpose field</span>
+</fieldset>
+<fieldset>
+<input type="checkbox" name="use-none" id="use-none" role="button">
+	<label for="use-none">We do not collect or use identifiable data<span class="glyphicon glyphicon-info-sign" aria-hidden="true"  title="Identifiable data means data, such as your name, phone number, email, address, health services, information on your physical or mental health conditions, or your social security number, that can be used on its own or with other information to identify you." style="display:inline;"></span></label><br>
+</fieldset>
+</div>
+</div>
+
+
+<div class="panel panel-primary match-large" id="generator-SHARE">
+	<div class="panel-heading">
+              <h3 class="panel-title">Sharing</h3>
+        </div>
+	<div class="panel-body">
+<fieldset> 
+<legend>
+Why is identifiable data<span class="glyphicon glyphicon-info-sign" aria-hidden="true"  title="Identifiable data means data, such as your name, phone number, email, address, health services, information on your physical or mental health conditions, or your social security number, that can be used on its own or with other information to identify you." style="display:inline;"></span> shared with external companies or entites:</legend>
+<input type="checkbox" name="share-purpose1" id="share-purpose1">
+<label for="share-purpose1">
+To provide the primary service of the app or technology
+</label><br>
+
+<label for="share-primary-clarification" id="share-primary-clarification-label">Primary Service </label><input type="text" name="use-primary-clarification" id="share-primary-clarification" placeholder="Enter if primary service would be unclear to average user" size="45">
+
+<input type="checkbox" name="share-purpose2" id="share-purpose2">
+<label for="share-purpose2">To develop marketing materials for our products</label><br>
+
+<input type="checkbox" name="share-purpose3" id="share-purpose3">
+<label for="share-purpose3">
+To conduct scientific research
+</label><br>
+<input type="checkbox" name="share-purpose4" id="share-purpose4">
+<label for="share-purpose4">
+For company operations (e.g. quality control or fraud detection)
+</label><br>
+<input type="checkbox" name="share-purpose5" id="share-purpose5">
+<label for="share-purpose5">To develop and improve new and current products and services (e.g., analytics)
+</label><br>
+<input type="checkbox" name="share-purpose6" id="share-purpose6">
+<label for="share-purpose6">Other:</label><br>
+
+
+
+<input type="text" name="share_other" id="share-other-freeform1" placeholder='Enter purpose for which you share identifiable data' size="50">
+<span  id="share-other-add" class="glyphicon glyphicon-plus-sign" aria-hidden="true" title="" style="display:inline;"></span><span class="sr-only" id="share-other-add-screenreader">Add additional other purpose field</span>
+
+
+</fieldset>
+<fieldset>
+
+<input type="checkbox" name="share-none" id="share-none">
+<label for="share-none">We do not share identifiable data<span class="glyphicon glyphicon-info-sign" aria-hidden="true"  title="Identifiable data means data, such as your name, phone number, email, address, health services, information on your physical or mental health conditions, or your social security number, that can be used on its own or with other information to identify you." style="display:inline;"></span></label><br>
+</fieldset>
+
+
+
+
+<fieldset>
+<legend>Why is data shared with external companies or entities after removing identifiers:</legend>
+<input type="checkbox" name="noshare-purpose1" id="noshare-purpose1">
+<label for="noshare-purpose1">To provide the primary service of the app or technology</label><br>
+
+<label for="noshare-primary-clarification" id="noshare-primary-clarification-label">Primary Service </label><input type="text" name="noshare-primary-clarification" id="noshare-primary-clarification" placeholder="Enter if primary service would be unclear to average user" size="45">
+
+<input type="checkbox" name="noshare-purpose2" id="noshare-purpose2">
+<label for="noshare-purpose2">To develop marketing materials for our products</label><br>
+<input type="checkbox" name="noshare-purpose3" id="noshare-purpose3">
+<label for="noshare-purpose3">
+To conduct scientific research
+</label><br>
+<input type="checkbox" name="noshare-purpose4" id="noshare-purpose4">
+<label for="noshare-purpose4">
+For company operations (e.g., quality control, fraud detection)
+</label><br>
+<input type="checkbox" name="noshare-purpose5" id="noshare-purpose5">
+<label for="noshare-purpose5">
+To develop and improve new and current products and services (e.g., analytics)
+</label><br>
+<input type="checkbox" name="noshare-purpose6" id="noshare-purpose6">
+<label for="noshare-purpose6">
+Other:
+</label><br>
+<input type="text" name="noshare_other" id="noshare-other-freeform1" placeholder='Enter purpose for which you share data after removing identifiers' size="50">
+<span  id="noshare-other-add" class="glyphicon glyphicon-plus-sign" aria-hidden="true" title="" style="display:inline;"></span><span class="sr-only" id="noshare-other-add-screenreader">Add additional other purpose field</span>
+
+
+</fieldset>
+<fieldset>
+
+<input type="checkbox" name="noshare-none" id="noshare-none">
+<label for="noshare-none">We do not share data after removing identifiers</label><br>
+</fieldset>
+</div>
+</div>
+
+
+<div class="panel panel-primary match-medium">
+	<div class="panel-heading">
+              <h2 class="panel-title">Sell</h2>
+        </div>
+	<div class="panel-body">
+<fieldset> 
+
+<legend>Is identifiable data<span class="glyphicon glyphicon-info-sign" aria-hidden="true"  title="Identifiable data means data, such as your name, phone number, email, address, health services, information on your physical or mental health conditions, or your social security number, that can be used on its own or with other information to identify you." style="display:inline;"></span> sold to <a target="new" href="https://www.ftc.gov/news-events/press-releases/2012/12/ftc-study-data-broker-industrys-collection-use-consumer-data" title="Data broker means: companies that collect personal information about
+consumers from a variety of public and non-public sources and resell the information to other companies
+(From FTC: https://www.ftc.gov/news-events/press-releases/2012/12/ftc-study-data-broker-industrys-collection-use-consumer-data).">data brokers</a>, marketing, advertising networks, or analytics firms.</legend>
+<input type="radio" name="sell" id="sell3">
+<label for="sell3">No</label>
+<input type="radio" name="sell" id="sell1">
+<label for="sell1">Yes</label>
+<input type="radio" name="sell" id="sell2">
+<label for="sell2">Yes; only with subject's permission<br><input type="text" name="sell-permission" id="sell-permission" placeholder="Indicate how permission is given by the subject. Links accepted." size="55"></label>
+
+</fieldset>
+<fieldset>
+<legend>Is data sold after removing identifiers (note that remaining data may not be anonymous) to <a target="new" href="https://www.ftc.gov/news-events/press-releases/2012/12/ftc-study-data-broker-industrys-collection-use-consumer-data" title="Data broker means: companies that collect personal information about consumers from a variety of public and non-public sources and resell the information to other companies
+(From FTC: https://www.ftc.gov/news-events/press-releases/2012/12/ftc-study-data-broker-industrys-collection-use-consumer-data).">data brokers</a>, marketing, advertising networks, or analytics firms.</legend>
+<input type="radio" name="deidentifiedsell" id="deidentifiedsell3">
+<label for="deidentifiedsell3">No</label>
+<input type="radio" name="deidentifiedsell" id="deidentifiedsell1">
+<label for="deidentifiedsell1">Yes</label>
+<input type="radio" name="deidentifiedsell" id="deidentifiedsell2">
+<label for="deidentifiedsell2">Yes; only with subject's permission<br><input type="text" name="deidentifiedsell-permission" id="deidentifiedsell-permission" placeholder="Indicate how permission is given by the subject. Links accepted." size="55"></label>
+
+
+</fieldset>
+</div>
+</div>
+
+<div class="panel panel-primary match" id="generator-STORE">
+	<div class="panel-heading">
+              <h3 class="panel-title">Store</h3>
+        </div>
+	<div class="panel-body">
+<fieldset> 
+<legend>Is subject data stored on the device?</legend>
+<input type="radio" name="ondevice-storage" id="ondevice-storage-yes"><label for="ondevice-storage-yes">Yes</label>
+<input type="radio" name="ondevice-storage" id="ondevice-storage-no"><label for="ondevice-storage-no">No</label><br>
+</fieldset>
+<fieldset>
+<legend>Is subject data stored outside the device at your company or through a third party?</legend>
+<input type="radio" name="offdevice-storage" id="offdevice-storage-yes"><label for="offdevice-storage-yes">Yes</label>
+<input type="radio" name="offdevice-storage" id="offdevice-storage-no"><label for="offdevice-storage-no">No</label><br>
+</fieldset>
+</div>
+</div>
+
+<div class="panel panel-primary match-medium" id="generator-ENCRYPT">
+	<div class="panel-heading">
+              <h3 class="panel-title">Encrypt</h3>
+        </div>
+	<div class="panel-body">
+<fieldset> 
+<legend>Does the app or technology use <span class="linkelike" title="Encryption means: a method of converting an original message of regular text
+into encoded text in such a way that only authorized parties can read it.">encryption</span> to encrypt subject data in the device or app?</legend>
+<input type="radio" name="device-encryption" id="device-encryption-yes"><label for="device-encryption-yes">Yes, by default</label>
+<input type="radio" name="device-encryption" id="device-encryption-yes-optin"><label for="device-encryption-yes-optin">Yes, when you take certain steps <input name="device-encryption-yes-optin-steps" id="device-encryption-yes-optin-steps" placeholder="Indicate the steps the user should take." size=40></label>
+<input type="radio" name="device-encryption" id="device-encryption-no"><label for="device-encryption-no">No</label>
+<input type="radio" name="device-encryption" id="device-encryption-na" checked><label for="device-encryption-na">Not Applicable</label>
+
+</fieldset>
+<fieldset>
+
+
+<legend>Does the app or technology use <span class="linklike" title="Encryption means: a method of converting an original message of regular text
+into encoded text in such a way that only authorized parties can read it..">encryption</span> to encrypt subject data while it is transmitted?</legend>
+<input type="radio" name="transit-encryption" id="transit-encryption-yes"><label for="transit-encryption-yes">Yes, by default</label>
+<input type="radio" name="transit-encryption" id="transit-encryption-yes-optin"><label for="transit-encryption-yes-optin">Yes, when you take certain steps <input name="transit-encryption-yes-optin-steps"  id="transit-encryption-yes-optin-steps" placeholder="Indicate the steps the user should take." size=40></label>
+<input type="radio" name="transit-encryption" id="transit-encryption-no"><label for="transit-encryption-no">No</label>
+<input type="radio" name="transit-encryption" id="transit-encryption-na" checked><label for="transit-encryption-na">Not Applicable</label>
+</fieldset>
+<fieldset>
+
+<legend>Does the app or technology use <span class="linklike" title="Encryption means: a method of converting an original message of regular text
+into encoded text in such a way that only authorized parties can read it.">encryption</span> to encrypt subject data when stored on our company servers or with an outside cloud computing services provider?</legend>
+<input type="radio" name="offdevice-encryption" id="offdevice-encryption-yes"><label for="offdevice-encryption-yes">Yes, by default</label>
+<input type="radio" name="offdevice-encryption" id="offdevice-encryption-yes-optin"><label for="offdevice-encryption-yes-optin">Yes, when you take certain steps <input name="offdevice-encryption-yes-optin-steps"  id="offdevice-encryption-yes-optin-steps" placeholder="Indicate the steps the user should take." size=40></label>
+<input type="radio" name="offdevice-encryption" id="offdevice-encryption-no"><label for="offdevice-encryption-no">No</label>
+<input type="radio" name="offdevice-encryption" id="offdevice-encryption-na" checked><label for="offdevice-encryption-na">Not Applicable</label>
+
+</fieldset>
+</div>
+</div>
+
+<div class="panel panel-primary match-large" id="generator-PRIVACY">
+	<div class="panel-heading">
+              <h3 class="panel-title">Privacy</h3>
+        </div>
+	<div class="panel-body">
+<fieldset> 
+<legend>Will this technology or app request access to other device data or applications, such as a phone’s camera, photos, or contacts?<br>
+
+</legend>
+
+<input type="radio" name="device-access" id="device-access-yes" value="socialmedia-yes"><label for="device-access-yes">Yes</label>
+<input type="radio" name="device-access" id="device-access-permission" value="device-access-permission"><label for="device-access-permission">Yes, only with subject permission</label>
+<input type="radio" name="device-access" id="device-access-no" value="device-access-no"><label for="device-access-no">No</label><br/>
+
+<textarea name="privacy-settings" id="privacy-settings" placeholder="Indicate how the user can check their settings, including permissions set as a default." cols=60 rows=4></textarea>
+</fieldset>
+<fieldset id="it-connects-to" >
+<legend>
+It connects to...</legend>
+<input type="checkbox" name="access" id="access-camera"><label for="access-camera">Camera</label><br/>
+<input type="checkbox" name="access" id="access-photos"><label for="access-photos">Photos</label><br/>
+<input type="checkbox" name="access" id="access-contacts"><label for="access-contacts">Contacts</label><br/>
+<input type="checkbox" name="access" id="access-location"><label for="access-location">Location Services</label><br/>
+<input type="checkbox" name="access" id="access-microphone"><label for="access-microphone">Microphone</label><br/>
+<input type="checkbox" name="access" id="access-device"><label for="access-device">Health monitoring devices</label><br/>
+<input type="checkbox" name="access" id="access-other"><label for="access-other">Other: </label><br/>
+<input type="text" name="privacy_other" id="privacy-other-freeform1" placeholder='Enter data or application requested by this technology.' size="50">
+<span  id="privacy-other-add" class="glyphicon glyphicon-plus-sign" aria-hidden="true" title="" style="display:inline;"></span><span class="sr-only" id="privacy-other-add-screenreader">Add additional type of access</span>
+
+</fieldset>
+<fieldset>
+<legend>
+Does this technology or app allow subject to share the collected data with their social media accounts, like Facebook?
+</legend>
+<input type="radio" name="socialmedia" id="socialmedia-yes" value="socialmedia-yes"><label for="socialmedia-yes">Yes</label>
+<input type="radio" name="socialmedia" id="socialmedia-permission" value="socialmedia-permission"><label for="socialmedia-permission">Yes, only with subject permission</label>
+<input type="radio" name="socialmedia" id="socialmedia-no" value="socialmedia-no"><label for="socialmedia-no">No</label><br/>
+
+<textarea name="socialmedial-settings" id="socialmedia-settings" placeholder="Indicate how the user can check their settings, including permissions set as a default." cols=60 rows=4></textarea>
+
+
+
+</fieldset>
+</div>
+</div>
+
+<div class="panel panel-primary match" id="generator-options">
+	<div class="panel-heading">
+              <h3 class="panel-title">User Options</h3>
+        </div>
+	<div class="panel-body">
+<fieldset> 
+<legend>
+Can subject access, edit, share, or delete the data we have about them?
+Select all that apply:<br/>
+</legend>
+<input type="checkbox" name="options" id="options-access-checkbox" value="option-access"><label for="options-access-checkbox">Access subject data</label>
+<input type="checkbox" name="options" id="options-edit-checkbox" value="option-edit"><label for="options-edit-checkbox">Edit subject data</label>
+<input type="checkbox" name="options" id="options-share-checkbox" value="option-share"><label for="options-share-checkbox">Share subject data</label>
+<input type="checkbox" name="options" id="options-delete-checkbox" value="option-delete"><label for="options-delete-checkbox">Delete subject data</label>
+<br>
+<textarea name="options-settings" id="options-settings" placeholder="If you selected any of the above, include a full https link or instructions to the consumer on how to check their settings." cols=60 rows=4></textarea>
+<input type="checkbox" name="options" id="options-none-checkbox" value="option-none"><label for="options-none-checkbox">None of the above</label>
+</fieldset>
+</div>
+</div>
+
+<div class="panel panel-primary match" id="generator-deactivation">
+	<div class="panel-heading">
+              <h3 class="panel-title">Deactivation<span class="glyphicon glyphicon-info-sign" aria-hidden="true" title="Deactivation means the data subject or you close the account or you cease operation." style="display:inline;"></span></h3>
+        </div>
+	<div class="panel-body">
+<fieldset> 
+<legend>When the subject's account is deactivated/terminated by them or the company, their data are...</legend>
+<input type="radio" name="deactivation" id="deactivation-immediate" value="deactivation-immediate"><label for="deactivation-immediate">Deleted immediately</label>
+<input type="radio" name="deactivation" id="deactivation-time" value="deactivation-time"><label for="deactivation-time">Deleted after <input id="deactivation-period" placeholder="Indicate time period here"></label>
+<input type="radio" name="deactivation" id="deactivation-permanent" value="deactivation-permanent"><label for="deactivation-permanent">Permanently retained and used</label>
+<input type="radio" name="deactivation" id="deactivation-request" value="deactivation-request"><label for="deactivation-request">Retained and used until you request deletion</label>
+</fieldset>
+</div>
+</div>
+
+<div class="panel panel-primary match" id="generator-policy">
+	<div class="panel-heading">
+              <h3 class="panel-title">Policy Changes</h3>
+        </div>
+	<div class="panel-body">
+<fieldset> 
+<textarea name="changes" placeholder="Describe how/if the company will notify consumers of privacy policy changes (e.g. merger or acquisition) and provide link to section in privacy policy." cols=60 rows=4 id="policy-change-entry"></textarea>
+</fieldset>
+</div>
+</div>
+
+
+<div class="panel panel-primary match" id="generator-breach">
+	<div class="panel-heading">
+              <h3 class="panel-title">Breach<span class="glyphicon glyphicon-info-sign" aria-hidden="true" title="Breach means an unauthorized disclosure." style="display:inline;"></span>
+</h3>
+        </div>
+	<div class="panel-body">
+<fieldset> 
+<textarea name="breach" placeholder="Describe how the company will protect consumers’ data in the case of a breach and provide link to section in privacy policy." cols=60 rows=4 id="breach-entry"></textarea>
+</fieldset>
+</div>
+</div>
+
+
+<div class="panel panel-primary match" id="generator-contact">
+	<div class="panel-heading">
+              <h3 class="panel-title">Contact information.</h3>
+        </div>
+	<div class="panel-body">
+		
+		<label for="companyname">Legal Entity Name</label><input type="text" name="companyname" id="companyname" required><br>
+		<label for="privacypolicy">Link to full privacy policy</label><input type="text" name="privacypolicy" id="privacypolicy" pattern="https?://.+" title="Include http://" required><br>
+		<label for="contactform">Link to Online Comment/Contact Form</label><input type="text" name="contactform" id="contactform" pattern="https?://.+" title="Include http://" required><br>
+		<label for="emailaddress">Email Address</label><input type="text" name="emailaddress" id="emailaddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required><br>
+		<label for="phonenumber">Phone Number</label><input type="text" name="phonenumber" id="phonenumber" required><br>
+		<label for="companyaddress">Address (at a minimum include country)</label><br><input type="text" name="companyaddress" id="companyaddress" required size="50"><br>
+</div>
+</div>
+
+<div class="panel panel-primary" id="generator-contact">
+	<div class="panel-heading">
+              <h3 class="panel-title">Preview Privacy Notice</h3>
+        </div>
+	<div class="panel-body">
+<p>When you've completed the form, you can condense the notice to show how it will be displayed for the user.<br><button type="button" class="btn btn-lg btn-primary" id="MPN-condense" style="color:white;">Preview Privacy Notice</button></p>
+</div>
+</div>
+
+</form>
+</div>
+<!--*******************************************************
+Beginning of Model Policy Notice
+********************************************************-->
+
+<div class="col-xs-12 col-md-6"><!-- right column-->
+<div id="MPN-copy">
+
+<div class="row panel panel-primary" style="text-align:center" role="banner">
+<div class="col-xs-12 panel-heading">
+<div class="col-xs-12 col-sm-8" style="text-align:center"><h1>Our Privacy Notice</h1>
+<p>Below is information about how we handle your personal data.</p>
+
+</div>
+<div class="hidden-xs col-sm-4"><img alt="" src="graphics/our-policy.png" style="display: initial; float:right; max-height: 150px; max-width:150px;"/></div>
+ </div>
+<span aria-hidden="true">Touch <button type="button" class="btn btn-md btn-default">buttons</button> and <span id="instructions" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> for additional information.</span>
+</div>
+
+<div role="main">
+
+
+
+
+
+
+
+
+
+<div class="row panel panel-info match" id="MPN-HIPAA">
+</div>
+
+
+	<div class="row panel panel-info match-medium" id="MPN-USE">  
+	<div class="col-xs-12 panel-heading" style="text-align:center">
+	<h2>USE</h2>
+	<p>How we use your data internally</p>
+	</div>
+	<div class="col-xs-12 panel-body"><p>We <span id="use-not">DO NOT </span>collect and use your identifiable data<span class="glyphicon glyphicon-info-sign" aria-hidden="true"  title="Identifiable data means data, such as your name, phone number, email, address, health services, information on your physical or mental health conditions, or your social security number, that can be used on its own or with other information to identify you." style="display:inline;"></span> <span id="use-for">for the following purposes:</span></p>
+	</div>
+
+	<div class="col-xs-4 col-sm-4 col-md-2" id="use-primary"><button type="button" class="btn btn-md btn-default" title="To provide the primary service of the app or technology" id="use-primary-button"><img alt="" src="graphics/use-primary.png" id="use-primary-image">Provide<br>Service</button></div>
+	<div class="col-xs-4 col-sm-4 col-md-2" id="use-marketing"><button type="button" class="btn btn-md btn-default" title="To develop marketing materials for our products"><img alt="" src="graphics/use-marketing.png" title="">Develop<br>Marketing</button></div>
+	<div class="col-xs-4 col-sm-4 col-md-2" id="use-research"><button type="button" class="btn btn-md btn-default" title="To conduct scientific research"><img alt="" src="graphics/use-research.png" title="">Conduct<br>Research</button></div>
+	<div class="col-xs-4 col-sm-4 col-md-2" id="use-operations" ><button type="button" class="btn btn-md btn-default" title="For company operations (e.g. quality control or fraud detection)"><img alt="" src="graphics/use-operations.png" title="">Operate<br>Company</button></div>
+	<div class="col-xs-4 col-sm-4 col-md-2" id="use-innovation" ><button type="button" class="btn btn-md btn-default" title="To develop and improve new and current products and services (e.g. analytics). Analytics is the process of drawing conclusions from patterns in data."><img alt="" src="graphics/use-innovation.png" title="">Develop<br>Products</button></div>
+
+
+
+	
+<div class="col-xs-12">&nbsp;</div>
+<div class="col-xs-12 col-sm-10 col-md-10" id="use-other"><img alt="" class="other" src="graphics/other.png" id="use-other-image"><ul id="use-other-text"></ul></div>
+<div class="col-xs-12 col-sm-12 col-md-12" id="use-none-image"><p><img alt="" src="graphics/negative.png"></p></div>
+
+</div>
+
+
+<div class="row panel panel-info match-large" id="MPN-SHARE">  
+  <div class="col-xs-12 panel-heading" style="text-align:center">
+              <h2>SHARE</h2>
+		<p>How we share your data externally with other companies or entities</p>
+        </div>
+
+<div class="col-xs-12 panel-body"><p>We <span id="share-not">DO NOT </span>share your identifiable data<span class="glyphicon glyphicon-info-sign" aria-hidden="true"  title="Identifiable data means data, such as your name, phone number, email, address, health services, information on your physical or mental health conditions, or your social security number, that can be used on its own or with other information to identify you." style="display:inline;"></span> <span id="share-for">for the following purposes:</span></p>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-2" id="share-primary"><button type="button" class="btn btn-md btn-default" title="To provide the primary service of the app or technology" id="share-primary-button"><img alt="" src="graphics/use-primary.png">Provide<br>Service</button></div>
+<div class="col-xs-4 col-sm-4 col-md-2" id="share-marketing"><button type="button" class="btn btn-md btn-default"  title="To develop marketing materials for our products"><img alt="" src="graphics/use-marketing.png">Develop<br>Marketing<br></button></div>
+<div class="col-xs-4 col-sm-4 col-md-2" id="share-research"><button type="button" class="btn btn-md btn-default" title="To conduct scientific research"><img alt="" src="graphics/use-research.png" >Conduct<br>Research</button></div>
+<div class="col-xs-4 col-sm-4 col-md-2" id="share-operations" ><button type="button" class="btn btn-md btn-default" title="For company operations (e.g. quality control or fraud detection)"><img alt="" src="graphics/use-operations.png" >Operate<br>Company</button></div>
+<div class="col-xs-4 col-sm-4 col-md-2" id="share-innovation" ><button type="button" class="btn btn-md btn-default" title="To develop and improve new and current products and services (e.g. analytics). Analytics is the process of drawing conclusions from patterns in data."><img alt="" src="graphics/use-innovation.png" >Develop<br>Product</button></div>
+
+
+ 
+<div class="col-xs-12">&nbsp;</div>
+<div class="col-xs-12 col-sm-10" id="share-other"><p><img class="other" alt="" src="graphics/other.png" id="share-other-image"><ul id="share-other-text"></ul></div>
+<div class="col-sm-1"></div>
+
+<div class="col-xs-12 col-sm-12 col-md-12" id="share-none-image" ><p><img alt="" src="graphics/negative.png"></p></div>
+
+
+
+
+<div class="col-xs-12 panel-heading"></div>
+
+
+
+		
+<div class="col-xs-12 panel-body"><p>We <span id="noshare-not">DO NOT </span>share your data AFTER removing identifiers<span id="noshare-for"> for the following purposes:</span><br>(note that remaining data may not be anonymous) </p></div>
+<div class="col-xs-4 col-sm-4 col-md-2" id="noshare-primary"><button type="button" class="btn btn-md btn-default" title="To provide the primary service of the app or technology" id="noshare-primary-button"><img alt="" src="graphics/use-primary.png">Provide<br>Service</button></div>
+<div class="col-xs-4 col-sm-4 col-md-2" id="noshare-marketing"><button type="button" class="btn btn-md btn-default" title="To develop marketing materials for our products"><img alt="" src="graphics/use-marketing.png">Develop<br>Marketing</button></div>
+<div class="col-xs-4 col-sm-4 col-md-2" id="noshare-research"><button type="button" class="btn btn-md btn-default" title="To conduct scientific research"><img alt="" src="graphics/use-research.png" >Conduct<br>Research</button></div>
+<div class="col-xs-4 col-sm-4 col-md-2" id="noshare-operations" ><button type="button" class="btn btn-md btn-default" title="For company operations (e.g. quality control or fraud detection)"><img alt="" src="graphics/use-operations.png" >Operate<br>Company</button></div>
+<div class="col-xs-4 col-sm-4 col-md-2" id="noshare-innovation" ><button type="button" class="btn btn-md btn-default" title="To develop and improve new and current products and services (e.g. analytics). Analytics is the process of drawing conclusions from patterns in data."><img alt="" src="graphics/use-innovation.png" >Develop<br>Product</button></div>
+
+<div class="col-xs-12">&nbsp;</div>
+<div class="col-xs-12 col-sm-10" id="noshare-other"><img class="other" alt="" src="graphics/other.png" id="noshare-other-image"><ul id="noshare-other-text"></ul></div>
+ <div class="col-sm-1"></div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12" id="noshare-none-image" ><p><img alt="" src="graphics/negative.png"></p></div>
+
+</div>
+
+
+<div class="row panel panel-info match-medium" id="MPN-SELL">  
+  <div class="col-xs-12 panel-heading" style="text-align:center">
+		<h2>SELL</h2>
+		<p>Who we sell your data to</p>
+	</div>
+
+<div class="col-sm-12 panel-body"><p>We <span id="sell-not">DO NOT</span> sell your identifiable data<span class="glyphicon glyphicon-info-sign" aria-hidden="true"  title="Identifiable data means data, such as your name, phone number, email, address, health services, information on your physical or mental health conditions, or your social security number, that can be used on its own or with other information to identify you." style="display:inline;"></span><span id="sell-permission-text">, only with your permission</span><span id="sell-firms"> to some or all of the following</span></p>
+
+</div>
+
+<div class="col-xs-6 col-sm-3 tight center" id="sell-firms2">
+<p><img alt="" src="graphics/sell-broker.png">Data<br>Brokers<span class="glyphicon glyphicon-info-sign" aria-hidden="true" title="Data broker means companies that collect personal information about consumers from a variety of public and non-public sources and resell the information to other companies (From https://www.ftc.gov/news-events/press-releases/2012/12/ftc-study-data-broker-industrys-collection-use-consumer-data)." style="display:inline;"></span>
+</p>
+</div>
+<div class="col-xs-6 col-sm-3 tight center" id="sell-firms3">
+<p><img alt="" src="graphics/sell-marketing.png">Marketing<br>Firms</p>
+</div>
+<div class="col-xs-6 col-sm-3 tight center" id="sell-firms4">
+<p><img alt="" src="graphics/sell-network.png">Advertising<br>Networks</p>
+</div>
+<div class="col-xs-6 col-sm-3 tight center" id="sell-firms5">
+<p><img alt="" src="graphics/sell-analytics.png">Analytics<br>Firms</p>
+</div>
+<div class="col-xs-12 col-sm-12">
+<p class="alert alert-warning" role="alert" id="sell-information"> <strong>Here is how to adjust your permission:</strong><br>
+	<span id="sell-details"></span>. </p>
+</div>
+<div class="col-xs-12 panel-heading"></div>
+<div class="col-xs-12 panel-body"><p>We <span id="deidentifiedsell-not">DO NOT</span> sell your data AFTER removing identifiers (note that remaining data may not be anonymous)<span id="deidentifiedsell-permission-text">, only with your permission</span><span id="deidentifiedsell-firms"> to some or all of the following</span></p></div>
+
+
+<div class="col-xs-6 col-sm-3 tight center" id="deidentifiedsell-firms2">
+<p><img alt="" src="graphics/sell-broker.png">Data<br>Brokers<span class="glyphicon glyphicon-info-sign" aria-hidden="true" title="Data broker means companies that collect personal information about consumers from a variety of public and non-public sources and resell the information to other companies (From https://www.ftc.gov/news-events/press-releases/2012/12/ftc-study-data-broker-industrys-collection-use-consumer-data)." style="display:inline;"></span></p>
+</div>
+<div class="col-xs-6 col-sm-3 tight center" id="deidentifiedsell-firms3">
+<p><img alt="" src="graphics/sell-marketing.png">Marketing<br>Firms</p>
+</div>
+<div class="col-xs-6 col-sm-3 tight center" id="deidentifiedsell-firms4">
+<p><img alt="" src="graphics/sell-network.png">Advertising<br>Networks</p>
+</div>
+<div class="col-xs-6 col-sm-3 tight center" id="deidentifiedsell-firms5">
+<p><img alt="" src="graphics/sell-analytics.png">Analytics<br>Firms</p>
+</div>
+
+<div class="col-xs-12 col-sm-12">
+<p class="alert alert-warning"  role="alert" id="deidentifiedsell-information"> <strong>Here is how to adjust your permission:</strong><br>
+	<span id="deidentifiedsell-details"></span>   </p>
+</div>
+
+
+
+</div>
+
+
+<div class="row panel panel-info match" id="MPN-STORE">  
+	<div class="col-xs-12 panel-heading" style="text-align:center">
+			<h2>STORE</h2>
+			<p>How we store your data</p>
+	</div>
+
+	<div class="col-xs-6 panel-body center"><button id="store-ondevice-button" title="Your data are stored on the device" class="btn btn-lg btn-default"><img alt=""  src="graphics/store-ondevice.png" id="store-ondevice-image">On your<br>device</button></div>
+
+	<div class="col-xs-6 panel-body center"><button id="store-offdevice-button" title="Your data are stored outside the device at our company or through a third party." class="btn btn-lg btn-default"><img alt="" src="graphics/store-offdevice.png" id="store-offdevice-image">Outside<br>your device</button></div>
+
+<div class="col-xs-12 col-sm-12 col-md-12 center" id="store-none-image"><p><img alt="" src="graphics/negative.png">We do not store your data</p></div>
+</div>
+
+<div class="row panel panel-info match-medium" id="MPN-ENCRYPT">
+  <div class="col-xs-12 panel-heading" style="text-align:center">
+	<h2>ENCRYPTION<span class="glyphicon glyphicon-info-sign" aria-hidden="true"  title="Encryption means a method of converting an original message of regular text into encoded text in such a way that only authorized parties can read it." style="display:inline;"></span></h2>
+	<p>How we encrypt your data</p>
+ </div>
+<div class="col-xs-12 panel-body">
+<div class="col-xs-12 col-sm-4 center" id="encrypt-ondevice">
+<button type="button" class="btn btn-lg btn-default" title="The app or technology uses encryption to encrypt your data in the device or app" id="encrypt-device-button"><img alt="" src="graphics/store-ondevice.png" id="encrypt-device-image"></button>
+      <p class="alert alert-warning" role="alert" id="encrypt-device-instructions">
+	<span id="encrypt-ondevice-details"></span>  
+      </p>
+ </div>
+<div class="col-xs-12 col-sm-4 center" id="encrypt-transit">
+<button type="button" class="btn btn-lg btn-default" title="The app or technology use encryption to encrypt your data while it is transmitted" id="encrypt-transit-button">
+<img alt="" src="graphics/encrypt-transit.png" id="encrypt-transit-image"></button>
+  <p class="alert alert-warning" role="alert" id="encrypt-transit-instructions">
+	<span id="encrypt-transit-details"></span> 
+      </p>
+ </div>
+<div class="col-xs-12 col-sm-4 center" id="encrypt-offdevice">
+<button type="button" class="btn btn-lg btn-default" title="The app or technology uses encryption to encrypt your data when stored on our company servers or with an outside cloud computing services provider" id="encrypt-offdevice-button">
+<img alt="" src="graphics/encrypt-offdevice.png" title="" id="encrypt-offdevice-image" ></button>
+ <p class="alert alert-warning" role="alert" id="encrypt-offdevice-instructions">
+	<span id="encrypt-offdevice-details"></span> 
+      </p>
+ </div>
+
+
+
+ <div class="col-xs-12 panel-body" id="cloud-computing-definition" role="alert"><p class=" alert alert-info" style="padding-left:25px">
+ <span class='glyphicon glyphicon-cloud-download' aria-hidden='true' style='display:inline;'></span> Cloud computing means a kind of Internet-based computing that provides shared processing resources and data to computers and other devices on demand.
+ </p>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 center" id="encrypt-notapplicable-image"><p><img alt="" src="graphics/negative.png">Not applicable</p></div>
+
+</div>
+</div>
+
+
+
+<div class="row panel panel-info match-large" id="MPN-PRIVACY" >
+  <div class="col-xs-12 panel-heading" style="text-align:center">
+		<h2>PRIVACY</h2>
+		<p>How this technology accesses other data</p>
+	</div>
+
+
+<div class="col-sm-12 panel-body"><p> This technology or app <span id="privacy-not">DOES NOT</span> request access to other device data or applications, such as your phone's camera, photos, or contacts</p></div>
+
+
+	<div class="col-xs-12" id="it-connects-to-mpn"><p><span id="privacy-permission-text">Only with your permission </span>it connects to</p></div>
+	<div class="col-xs-4 col-sm-3 col-md-2 center"  id="privacy-camera"><p><img alt="" src="graphics/privacy-camera.png" title="">Camera</p></div>
+	<div class="col-xs-4 col-sm-3 col-md-2 center"  id="privacy-photos"><p><img alt="" src="graphics/privacy-photos.png" title="">Photos</p></div>
+	<div class="col-xs-4 col-sm-3 col-md-2 center" id="privacy-contacts"><p><img alt="" src="graphics/privacy-contacts.png" title="">Contacts</p></div>
+	<div class="col-xs-4 col-sm-3 col-md-2 center"  id="privacy-location"><p><img alt="" src="graphics/privacy-location.png">Location Services</p></div>
+	<div class="col-xs-4 col-sm-3 col-md-2 center" id="privacy-microphone"><p><img alt="" src="graphics/privacy-microphone.png" title="">Microphone</p></div>
+	<div class="col-xs-4 col-sm-3 col-md-2 center"  id="privacy-device"><p><img alt="" src="graphics/privacy-health.png">Health Monitoring Devices</p></div>
+	
+
+
+
+<div class="col-xs-12"></div>
+	<div class="col-xs-12 col-sm-10 col-md-10" id="privacy-other"><img class="other" alt="" src="graphics/other.png" id="privacy-other-image"><ul id="privacy-other-text"></ul></div>
+
+
+<div class="col-xs-12 panel-body"> <div class="alert alert-warning" role="alert" id="privacy-instructions">
+        <p><strong>Here is how you can check your settings, including permissions set as a default.</strong><br>
+	<span id="privacy-details"></span> </p>
+      </div>
+</div>
+
+
+
+<div class="col-xs-12 panel-heading"></div>
+
+
+<div class="col-xs-12 panel-body"><p>This technology or app <span id="socialmedia-not">DOES NOT</span> allows you to share the collected data with your social media accounts, like Facebook<span id="socialmedia-permission-text">, only with your permission</span>.</p>
+</div>
+
+
+<div class="col-xs-12 panel-body"> <div class="alert alert-warning" role="alert" id="socialmedia-instructions">
+       <p> <strong>Here is how you can check your settings.</strong><br>
+	<span id="socialmedia-details"></span> </p>
+      </div>
+</div>
+
+</div>
+
+<div class="row panel panel-info match" id="MPN-OPTIONS">
+  <div class="col-xs-12 panel-heading">
+		<h2>USER OPTIONS</h2>
+		<p>What you can do with the data that we collect</p>
+
+	</div>
+<div class="col-xs-12 panel-body">
+	<div class="col-xs-6 col-sm-3 tight center"  id="options-access">
+	
+
+	<p>
+	<img alt="" src="graphics/options-access.png" title="">
+	<strong>Access your data</strong>
+	</p>
+	</div>
+	<div class="col-xs-6 col-sm-3 tight center" id="options-edit">
+
+	<p>
+	<img alt="" src="graphics/options-edit.png" title="">
+	<strong>Edit your data</strong>
+	</p>
+	</div>
+
+<div class="col-xs-6 col-sm-3 tight center" id="options-share">
+	
+	<p>
+	<img alt="" src="graphics/options-share.png" title="">
+	<strong>Share your data</strong>
+	</p>
+	</div>
+	<div class="col-xs-6 col-sm-3 tight center" id="options-delete">
+	
+	<p>
+	<img alt="" src="graphics/options-delete.png" title=""> 
+	<strong>Delete your data</strong>
+	</p>
+	</div>	
+</div>
+<div class="col-xs-12 panel-body"> <div class="alert alert-warning" role="alert" id="options-instructions">
+        <p><strong>Here is how to do this..</strong><br>
+	<span id="options-details"></span></p> 
+      </div>
+</div>
+
+
+</div>
+
+
+<div class="row panel panel-info match " id="MPN-DEACTIVATION">
+  <div class="col-xs-12 panel-heading" style="text-align:center">
+		<h2>DEACTIVATION<span class="glyphicon glyphicon-info-sign" aria-hidden="true" title="Deactivation means your account is closed by you or the company, or when the company ceases operations." style="display:inline;"></span></h2>
+		<p>What happens to your data when your account is deactivated</p>
+
+	</div>
+<div class="col-xs-12 col-md-12"><p> When your account is deactivated/terminated by you or the company, your data are <strong id="deactivation-label">Incomplete</strong></p></div>
+
+	</div>
+
+
+
+
+<div class="row panel panel-info match " id="MPN-POLICY">
+  <div class="col-xs-12 panel-heading" style="text-align:center">
+		<h2>POLICY CHANGES</h2>
+		<p>How we will notify you if our privacy policy changes</p>
+	</div>
+	<div class="col-xs-12" style="padding-top:25px"><p id="policy-change">test</p></div>
+
+</div>
+
+
+
+<div class="row panel panel-info match " id="MPN-BREACH">
+  <div class="col-xs-12 panel-heading" style="text-align:center">
+		<h2>BREACH<span class="glyphicon glyphicon-info-sign" aria-hidden="true" title="Breach means an unauthorized disclosure." style="display:inline;"></span></h2>
+		<p>How we will notify you and protect your data in case of an improper disclosure</p>
+	</div>
+
+	<div class="col-xs-12" style="padding-top:25px"><p id="breach"></p></div>
+</div>
+<div class="row panel panel-info match " id="MPN-CONTACT">
+  <div class="col-xs-12 panel-heading" style="text-align:center">
+		<h2>CONTACT US</h2>
+	</div>
+	<div class="col-xs-12" style="padding-top:25px"><p id="contact-us"></p></div>
+
+</div>
+
+
+
+</div> <!-- /main container -->
+</div> <!-- /MPN-copy-->
+</div> <!-- /right column -->
+</div> <!-- /row-->
+
+
+
+
+<div class="panel panel-danger">
+	<div class="panel-heading">
+              <h3 class="panel-title">Privacy Notice Code</h3>
+		<p>Copy this code into an html page.</p>
+        </div>
+	<textarea id="code-head">
+ <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	
+		<head> 
+			<meta charset="utf-8"/>
+		  	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		  	<!-- Note JS served using Subresource Integrity verification to prevent malicious injection of code -->
+			<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			crossorigin="anonymous"></script>
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+			integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+			crossorigin="anonymous"></script>
+
+			<title>Privacy Notice</title>
+			<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" 
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+
+			
+			
+			<style>
+			img {display: block; max-width:60px; max-height:80px; margin: auto;}
+			div {margin: auto;}
+			h3 {display: block; text-align:center;}
+			p {font-size: 12pt;}
+			button {margin: auto; margin-top: 5px;}
+			img.other {float: left; max-height:100px;}
+			ul {margin-left:75px; margin-top: 15px; font-size:16px}
+			a {color: #317ab9;}
+			.tight {padding: 0px; margin: auto;}
+			/*.ui-button {text-align:left; width: 500px;}	*/		
+			.center {text-align: center;}
+			.panel {font-size:16px;}
+			.panel-heading {padding: 0px; margin: 0px; text-align:center; background-color:#317ab9;}
+			/*.panel-title {font-size:24px;}*/
+			.tight {padding: 0px; margin: 0px;}
+			.btn{ color: #317ab9;}
+			.btn:hover {color: #317ab9; text-decoration:underline;}
+			.glyphicon-info-sign {vertical-align:super; font-size:80%; color:rgb(49, 112, 143);} 
+			</style>
+		</head>
+	</textarea>
+<script>$('#code-head').hide();</script>
+	<textarea class="tight" id="code" rows=20></textarea>
+
+</div>
+
+<script>
+
+var options = {/* … */}; // for linkify
+$("span[id$='primary-clarified']").css( 'cursor', 'pointer' );
+$(".glyphicon-info-sign").css( 'cursor', 'pointer' );
+$("span[id$='other-add']").css( 'cursor', 'pointer' );
+$("span[id$='other-add']").click(function(event) {
+	var name=$(this).prop('id').replace('add','freeform');
+	var count = $("input[id^='"+name+"']").length+1;
+	$("input[id^='"+name+"']").last().after("<input type=text id='"+name+"'"+count+" placeholder='"+$("#"+name+"1").prop('placeholder')+"' size=50>");
+	$("input[id^='"+name+"']").change(function( event ) {$( "#MPN-generator" ).submit();});
+	event.preventdefault;
+});
+
+$( "#socialmedia-no" ).change(function() { $("socialmedia-settings").prop('required',false); })
+$( "#socialmedia-yes" ).change(function() { $("socialmedia-settings").prop('required',true); })
+$( "#socialmedia-permission" ).change(function() { $("socialmedia-settings").prop('required',true); })
+$( "#socialmedia-no" ).change(function() { $("socialmedia-settings").prop('required',false); })
+
+function htmlEntities(str) {
+    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+};
+
+
+
+$("#use-none").click(function(event) {
+	if ($("#use-none").is(":checked")) 
+	{
+	$("input[id^='use-purpose']").each(function(index)
+	{
+		$(this).prop('checked', false);
+		$(this).button("refresh");
+	});	
+
+
+$("input[id^='use-other-freeform']").hide();
+$("#use-other-add").hide();
+
+	}
+});
+
+$("#share-none").click(function(event) {
+	if ($("#share-none").is(":checked")) 
+	{
+	$("input[id^='share-purpose']").each(function(index)
+	{
+		$(this).prop('checked', false);
+		$(this).button("refresh");
+	});
+
+$("input[id^='share-other-freeform']").hide();
+$("#share-other-add").hide();
+
+	}
+});
+
+$("#noshare-none").click(function(event) {
+	if ($("#noshare-none").is(":checked")) 
+	{
+	$("input[id^='noshare-purpose']").each(function(index)
+	{
+		$(this).prop('checked', false);
+		$(this).button("refresh");
+	});	
+
+$("input[id^='noshare-other-freeform']").hide();
+$("#noshare-other-add").hide();
+	}
+});
+
+$("input[id^='use-purpose']").click(function(event)
+	{
+	$("#use-none").prop('checked', false);
+	$("#use-none").button().button("refresh");
+	});
+
+$("input[id^='noshare-purpose']").click(function(event)
+	{
+	$("#noshare-none").prop('checked', false);
+	$("#noshare-none").button().button("refresh");
+	});
+
+$("input[id^='share-purpose']").click(function(event)
+	{
+	$("#share-none").prop('checked', false);
+	$("#share-none").button().button("refresh");
+	});
+
+$("#options-none-checkbox").click(function(event) {
+	if ($("#options-none-checkbox").is(":checked")) 
+	{
+
+	$("#options-access-checkbox").prop('checked', false);
+	$("#options-access-checkbox").button("refresh");
+	$("#options-edit-checkbox").prop('checked', false);
+	$("#options-edit-checkbox").button("refresh");
+	$("#options-share-checkbox").prop('checked', false);
+	$("#options-share-checkbox").button("refresh");
+	$("#options-delete-checkbox").prop('checked', false);
+	$("#options-delete-checkbox").button("refresh");
+	}
+});
+
+$("input[id^='privacy-other-freeform']").hide();
+$("#privacy-other-add").hide();
+$("input[id^='use-other-freeform']").hide();
+$("#use-other-add").hide();
+$("input[id^='share-other-freeform']").hide();
+$("#share-other-add").hide();
+$("input[id^='noshare-other-freeform']").hide();
+$("#noshare-other-add").hide();
+
+$("#access-other").click(function(event) {
+	if ($("#access-other").is(":checked")) 
+	{$("input[id^='privacy-other-freeform']").show();
+	$("#privacy-other-add").show();}	
+	else
+	{$("input[id^='privacy-other-freeform']").hide();
+	$("#privacy-other-add").hide();}
+});
+
+$("#use-other").click(function(event) {
+	if ($("#use-other").is(":checked")) 
+	{$("input[id^='use-other-freeform']").show();
+	$("#use-other-add").show();}	
+	else
+	{$("input[id^='use-other-freeform']").hide();
+	$("#use-other-add").hide();}
+});
+
+
+$("#share-purpose6").click(function(event) {
+	if ($("#share-purpose6").is(":checked")) 
+	{$("input[id^='share-other-freeform']").show();
+	$("#share-other-add").show();}	
+	else
+	{$("input[id^='share-other-freeform']").hide();
+	$("#share-other-add").hide();}
+});
+
+
+$("#noshare-purpose6").click(function(event) {
+	if ($("#noshare-purpose6").is(":checked")) 
+	{$("input[id^='noshare-other-freeform']").show();
+	$("#noshare-other-add").show();}	
+	else
+	{$("input[id^='noshare-other-freeform']").hide();
+	$("#noshare-other-add").hide();}
+});
+
+
+
+
+
+$( "#MPN-generator" ).submit(function( event ) {
+
+//HIPAA
+var section_complete = false;
+$("#MPN-HIPAA").html("");
+
+if ($("#HIPAA-entity").is(":checked"))
+	{	
+	$("#MPN-HIPAA").show(); 
+	$("#HIPAA-yes").show();
+	$("#MPN-HIPAA").html("<div class='col-xs-12 panel-heading'  style='text-align:center'><h1>HIPAA</h1></div><div class='col-xs-12' id='HIPAA-information'></div>"); 
+	if ($("#HIPAA1").is(":checked"))
+	{
+		$("#HIPAA-information").html('<p>Please note that the health data we collect as part of this <strong>'+$("#product_name1").val()+'</strong> are not protected by HIPAA and our company’s HIPAA Notice of Privacy Practices does not apply.</p>');
+		if ($("#product_name1").val()) { section_complete = true;}
+		$("#HIPAA-link").hide();
+		$("#HIPAA-link-label").hide();
+	}
+	if ($("#HIPAA2").is(":checked"))
+	{
+	// how do we linkify this to escape html characters?
+		$("#HIPAA-link-label").show();
+		$("#HIPAA-link").show();
+		$("#HIPAA-information").html('<p>Some of the health data we collect as part of this <strong>'+$("#product_name2").val()+'</strong> also are protected by HIPAA. Read our <a href="'+$("#HIPAA-link").val()+'">HIPAA Notice of Privacy Practices</a> for more information.</p>');
+		if ($("#HIPAA-link").val() && $("#product_name2").val()) {section_complete = true;}
+		
+	}
+}
+
+
+if ($('#HIPAA-entity2').is(':checked')) {
+	section_complete=true;
+	$("#HIPAA-yes").hide(); 
+	}
+
+if (section_complete == true ) {// not necessary because HIPAA section build from scratch each time
+	}
+
+if (section_complete == false ){
+	$("#MPN-HIPAA").prepend("<div class='col-xs-12 label label-danger'><h1>Section Incomplete</h1></div>");
+	}
+
+		
+	
+
+
+// End HIPAA
+
+// USE
+var use_counter = 0;
+use_complete = false;
+$("#use-none-image").hide();
+$("#use-not").hide();
+$("#use-for").hide();
+$("#use-other-image").hide();
+
+
+if ($("#use-purpose1").is(":checked")) 
+	{
+	$("#use-primary").show();
+	$("#use-primary-clarification").show();
+	$("#use-primary-clarification-label").show();
+	if ($("#use-primary-clarification").val()) 
+	{
+		$("#use-primary-button").prop("title",$("#use-primary-clarification").val());
+		} else {
+		$("#use-primary-button").prop("title","To provide the primary service of the app or technology");
+	}
+	 use_counter++;
+	}
+ else {
+	$("#use-primary").hide();
+	$("#use-primary-clarification").hide();
+	$("#use-primary-clarification-label").hide();
+	}
+
+if ($("#use-purpose2").is(":checked")) 
+	{$("#use-marketing").show(); use_counter++;}
+ else {$("#use-marketing").hide();}
+if ($("#use-purpose3").is(":checked")) 
+	{$("#use-research").show(); use_counter++;}
+ else {$("#use-research").hide();}
+if ($("#use-purpose4").is(":checked")) 
+	{$("#use-operations").show(); use_counter++;}
+ else {$("#use-operations").hide();}
+if ($("#use-purpose5").is(":checked")) {
+	$("#use-innovation").show();
+	use_counter++;
+	$("#use-innovation-analytics").show();
+} else {
+	$("#use-innovation").hide(); 
+
+	$("#use-innovation-analytics").hide();
+	}
+// Other Button
+
+if ($("#use-purpose6").is(":checked")) {
+	$("input[id^='use-other-freeform']").show();
+	$("#use-other-add").show();
+	//$("#use-other-text").html("<ul></ul>");
+	$("#use-other-text").html("");
+	$("input[id^='use-other-freeform']").each(function(index)
+	{
+	if ($(this).val())
+		{
+		if (use_counter !=0)  {$("#use-other-image").show();}
+		$("#use-other-text").append("<li>"+linkifyStr($(this).val(),options)+"</li>");
+		}
+	else {if ($(this).prop("id") != 'use-other-freeform1') {$(this).remove()};};
+	});
+	use_counter++;
+	} 
+else {
+	$("input[id^='use-other-freeform']").hide();
+	$("#use-other-add").hide();
+	$("#use-other-text").html("");
+}
+
+
+// None button
+
+if (use_counter != 0)
+	{
+	//$("#use-none").prop('checked', false);
+	//$("#use-none").button().button("refresh");
+	$("#use-for").show();
+	use_complete=true;
+}
+
+if ($("#use-none").is(":checked"))
+{
+	use_complete=true;
+	$("#use-none-image").show();
+	$("#use-not").show();
+	//$("#use-for").hide();
+}
+
+
+
+
+
+
+if ($("#MPN-USE-incomplete").length == 0){
+	$("#MPN-USE").prepend("<div class='col-xs-12 label label-danger' id='MPN-USE-incomplete'><h1>Section Incomplete</h1></div>");
+	}
+if (use_complete == true ) {$("#MPN-USE-incomplete").remove();}
+
+
+// End USE
+// SHARE - identifable
+var share_counter = 0;
+var share_complete=false;
+$("#share-none-image").hide();
+$("#share-not").hide();
+$("#share-for").hide();
+$("#share-other-image").hide();
+
+if ($("#share-purpose1").is(":checked")) {
+	$("#share-primary").show(); 
+	$("#share-primary-clarification").show();
+	$("#share-primary-clarification-label").show();
+	if ($("#share-primary-clarification").val()) 
+	{
+		$("#share-primary-button").prop("title",$("#share-primary-clarification").val());
+		} else {
+		$("#share-primary-button").prop("title","To provide the primary service of the app or technology");
+		}
+	share_counter++;
+	} 
+
+else {
+	$("#share-primary").hide();
+	$("#share-primary-clarification").hide();
+	$("#share-primary-clarification-label").hide();}
+
+
+
+
+
+
+
+if ($("#share-purpose2").is(":checked")) {$("#share-marketing").show(); share_counter++;} else {$("#share-marketing").hide();}
+if ($("#share-purpose3").is(":checked")) {$("#share-research").show(); share_counter++;} else {$("#share-research").hide();}
+if ($("#share-purpose4").is(":checked")) {$("#share-operations").show(); share_counter++;} else {$("#share-operations").hide();}
+if ($("#share-purpose5").is(":checked")) {
+	$("#share-innovation").show();
+	share_counter++;
+	$("#share-innovation-analytics").show();
+} else {
+	$("#share-innovation").hide(); 
+	$("#share-innovation-analytics").hide();
+	}
+if ($("#share-purpose6").is(":checked")) {
+	$("#share-other").show();
+	$("#share-other-text").html("");
+	$("input[id^='share-other-freeform']").each(function(index)
+	{
+	if ($(this).val())
+		{
+		if (share_counter !=0)  {$("#share-other-image").show();}
+		$("#share-other-text").append("<li>"+linkifyStr($(this).val(),options)+"</li>");
+		}
+	});
+	share_counter++; 
+	//$("#share-other-text").append("</ul>");
+	} else {$("#share-other").hide();}
+
+if ($("#share-none").is(":checked"))
+{
+	share_complete=true;
+	$("#share-none-image").show();
+	$("#share-not").show();
+	$("#share-for").hide();
+}
+
+
+if (share_counter != 0)
+	{
+	//$("#share-none").prop('checked', false);
+	//$("#share-none").button().button("refresh");
+	$("#share-for").show();
+	share_complete=true;
+}
+// End SHARE - identfiable
+
+// SHARE - de-identified
+var noshare_counter=0;
+var noshare_complete=false;
+$("#noshare-none-image").hide();
+$("#noshare-not").hide();
+$("#noshare-for").hide();
+$("#noshare-other-image").hide();
+
+if ($("#noshare-purpose1").is(":checked")) {
+	$("#noshare-primary").show(); 
+	$("#noshare-primary-clarification").show();
+	$("#noshare-primary-clarification-label").show();
+	if ($("#noshare-primary-clarification").val()) 
+	{
+		$("#noshare-primary-button").prop("title",$("#noshare-primary-clarification").val());
+		} else {
+		$("#noshare-primary-button").prop("title","To provide the primary service of the app or technology");
+		}
+	share_counter++;
+	} 
+
+else {
+	$("#noshare-primary").hide();
+	$("#noshare-primary-clarification").hide();
+	$("#noshare-primary-clarification-label").hide();}
+
+
+if ($("#noshare-purpose2").is(":checked")) {$("#noshare-marketing").show(); noshare_counter++;} else {$("#noshare-marketing").hide();}
+if ($("#noshare-purpose3").is(":checked")) {$("#noshare-research").show(); noshare_counter++;} else {$("#noshare-research").hide();}
+if ($("#noshare-purpose4").is(":checked")) {$("#noshare-operations").show(); noshare_counter++;} else {$("#noshare-operations").hide();}
+
+if ($("#noshare-purpose5").is(":checked")) {
+	$("#noshare-innovation").show();
+	noshare_counter++;
+} else {
+	$("#noshare-innovation").hide(); 
+	}
+if ($("#noshare-purpose6").is(":checked")) {
+	$("#noshare-other").show();
+	$("#noshare-other-text").html("");
+
+	
+	$("input[id^='noshare-other-freeform']").each(function(index)
+	{
+	if ($(this).val())
+		{
+		if (noshare_counter !=0)  {$("#noshare-other-image").show();}
+		$("#noshare-other-text").append("<li>"+linkifyStr($(this).val(),options)+"</li>");
+		}
+	});
+	noshare_counter++;
+	//$("#noshare-other-text").append("</ul>");
+	} else {$("#noshare-other").hide();}
+	if (noshare_counter == 0)
+	{
+	$("#noshare-none").show();
+
+	}
+ else { $("#noshare-none").hide(); }
+
+
+if ($("#noshare-none").is(":checked"))
+{
+	noshare_complete=true;
+	$("#noshare-none-image").show();
+	$("#noshare-not").show();
+	$("#noshare-for").hide();
+}
+
+
+if (noshare_counter != 0)
+	{
+
+	$("#noshare-for").show();
+	noshare_complete=true;
+}
+
+
+if ($("#MPN-SHARE-incomplete").length == 0){
+	$("#MPN-SHARE").prepend("<div class='col-xs-12 label label-danger' id='MPN-SHARE-incomplete'><h1>Section Incomplete</h1></div>");
+	}
+if (share_complete && noshare_complete) {$("#MPN-SHARE-incomplete").remove();}
+// End SHARE - de-identified
+
+// SELL
+var sell_complete = false;
+var deidentifiedsell_complete = false;
+
+//$("#sell-label").html("<span class='label label-info'>N/A</span>");
+//$("#deidentifiedsell-label").html("<span class='label label-info'>N/A</span>");
+$("#sell-information").hide();
+$("#sell-permission-text").hide();
+$("#sell-not").hide();
+$("#sell-firms").show();
+$("#sell-firms2").show();
+$("#sell-firms3").show();
+$("#sell-firms4").show();
+$("#sell-firms5").show();
+$("#deidentifiedsell-information").hide();
+$("#deidentifiedsell-permission-text").hide();
+$("#deidentifiedsell-not").hide();
+$("#deidentifiedsell-firms").show();
+$("#deidentifiedsell-firms2").show();
+$("#deidentifiedsell-firms3").show();
+$("#deidentifiedsell-firms4").show();
+$("#deidentifiedsell-firms5").show();
+
+
+
+if ($("#sell2").is(":checked")) // Yes, only with your permission
+	{
+	if ($("#sell-permission").val()) {
+	$("#sell-details").html(linkifyStr($("#sell-permission").val(),options))
+	$("#sell-information").show();
+	$("#sell-permission-text").show();
+	sell_complete = true;
+	}
+	}
+if ($("#sell3").is(":checked")) // No
+	{
+	$("#sell-not").show();
+	$("#sell-firms").hide();
+	$("#sell-firms2").hide();
+	$("#sell-firms3").hide();
+	$("#sell-firms4").hide();
+	$("#sell-firms5").hide();
+	sell_complete = true;
+}
+if ($("#sell1").is(":checked")) // Yes
+	{
+	sell_complete = true;
+}
+
+if ($("#deidentifiedsell2").is(":checked")) // Yes, only with your permission
+	{
+	if ($("#deidentifiedsell-permission").val()) {
+	$("#deidentifiedsell-details").html(linkifyStr($("#deidentifiedsell-permission").val(),options))
+	$("#deidentifiedsell-information").show();
+	$("#deidentifiedsell-permission-text").show();
+	deidentifiedsell_complete = true;	
+	}
+	}
+if ($("#deidentifiedsell3").is(":checked")) // No
+	{
+	$("#deidentifiedsell-not").show();
+	$("#deidentifiedsell-firms").hide();
+	$("#deidentifiedsell-firms2").hide();
+	$("#deidentifiedsell-firms3").hide();
+	$("#deidentifiedsell-firms4").hide();
+	$("#deidentifiedsell-firms5").hide();
+	deidentifiedsell_complete = true;
+}
+if ($("#deidentifiedsell1").is(":checked")) 
+	{
+	//$("#deidentifiedsell-label").html("<span class='label label-danger'>Yes</span>");
+	deidentifiedsell_complete = true;
+}
+
+
+
+if ($("#MPN-SELL-incomplete").length == 0){
+	$("#MPN-SELL").prepend("<div class='col-xs-12 label label-danger' id='MPN-SELL-incomplete'><h1>Section Incomplete</h1></div>");
+	}
+if (sell_complete && deidentifiedsell_complete) {$("#MPN-SELL-incomplete").remove();}
+
+// END SELL
+// STORE
+var ondeviceComplete = false;
+var offdeviceComplete = false;
+//$("#store-ondevice-not").hide();
+//$("#store-offdevice-not").hide();
+
+
+
+if ($("#ondevice-storage-no").is(":checked")) 
+{
+	//$("#store-ondevice-not").show();
+	$("#store-ondevice-button").hide();
+	ondeviceComplete = true;
+}
+if ($("#ondevice-storage-yes").is(":checked")) 
+{
+	$("#store-ondevice-button").show();
+	ondeviceComplete = true;
+}
+
+if ($("#offdevice-storage-no").is(":checked")) 
+{
+	$("#store-offdevice-button").hide();
+	offdeviceComplete = true;
+}
+if ($("#offdevice-storage-yes").is(":checked"))
+{
+	$("#store-offdevice-button").show();
+	offdeviceComplete = true;
+}
+
+if ($("#ondevice-storage-no").is(":checked") && $("#offdevice-storage-no").is(":checked"))
+{$("#store-none-image").show();}
+else {$("#store-none-image").hide();}
+
+
+
+
+if ($("#MPN-STORE-incomplete").length == 0){
+	$("#MPN-STORE").prepend("<div class='col-xs-12 label label-danger' id='MPN-STORE-incomplete'><h1>Section Incomplete</h1></div>");
+	}
+if (ondeviceComplete && offdeviceComplete) {$("#MPN-STORE-incomplete").remove();}
+// END STORE
+// ENCRYPT
+var ondeviceEncryptComplete = false;
+var offdeviceEncryptComplete = false;
+var transitEncryptComplete = false;
+var encryptNA = 0;
+$("#encrypt-device-button").show();
+$("#encrypt-transit-button").show();
+$("#encrypt-offdevice-button").show();
+$("#encrypt-device-instructions").hide();
+$("#encrypt-transit-instructions").hide();
+$("#encrypt-offdevice-instructions").hide();
+$("#cloud-computing-definition").show();
+
+
+if ($("#device-encryption-yes").is(":checked")) // device encryption is on
+	{$("#encrypt-device-button").attr("title","This app or technology does use encryption to encrypt your data in the device or app");
+	 $("#encrypt-device-button").html("<img src='graphics/encrypt-ondevice.png' alt=''>Encrypted<br>in device or app<br>by default");
+ ondeviceEncryptComplete = true;
+ 	}
+	else 
+  	{if ($("#device-encryption-no").is(":checked"))// device encryption is off   
+    		{$("#encrypt-device-button").attr("title","This app or technology does NOT use encryption to encrypt your data in the device or app");
+		$("#encrypt-device-button").html("<img src='graphics/store-ondevice.png' alt=''>Not encrypted<br>in device or app");
+ 	ondeviceEncryptComplete = true;
+    		} 
+   		else 
+     		{if ($("#device-encryption-na").is(":checked"))// device encryption is not applicable
+       			{$("#encrypt-device-button").hide();
+ 			ondeviceEncryptComplete = true;
+			encryptNA ++;
+			}
+      			 else
+			{if ($("#device-encryption-yes-optin").is(":checked"))	  // device encryption is optin
+ 				{$("#encrypt-device-button").attr("title","This app or technology does use encryption to encrypt your data in the device or app when you take certain steps.");
+				$("#encrypt-device-button").html("<img src='graphics/encrypt-ondevice.png' alt=''>Encrypted<br>in device or app<br>when you ...");
+	   			$("#encrypt-device-instructions").show();
+ 				if ($("#device-encryption-yes-optin-steps").val()){
+				$("#encrypt-ondevice-details").text($("#device-encryption-yes-optin-steps").val());
+				ondeviceEncryptComplete = true;}
+				}
+	   
+        		}
+      		}
+   	}
+
+
+
+
+if ($("#transit-encryption-yes").is(":checked")) // transit encryption is on
+	{$("#encrypt-transit-button").attr("title","This app or technology does use encryption to encrypt your data while it is transmitted");
+	 $("#encrypt-transit-button").html("<img src='graphics/encrypt-transit.png' alt=''>Encrypted<br>while transmitted<br>by default");
+ transitEncryptComplete = true;
+ 	}
+	else 
+  	{if ($("#transit-encryption-no").is(":checked"))// transit encryption is off   
+    		{$("#encrypt-transit-button").attr("title","This app or technology does NOT use encryption to encrypt your data while it is transmitted");
+		$("#encrypt-transit-button").html("<img src='graphics/noencrypt-transit.png' alt=''>Not encrypted<br>while transmitted");
+ 	transitEncryptComplete = true;
+    		} 
+   		else 
+     		{if ($("#transit-encryption-na").is(":checked"))// transit encryption is not applicable
+       			{$("#encrypt-transit-button").hide();
+ 			transitEncryptComplete = true;
+			encryptNA ++;
+			}
+      			 else
+			{if ($("#transit-encryption-yes-optin").is(":checked"))	  // transit encryption is optin
+ 				{$("#encrypt-transit-button").attr("title","This app or technology does use encryption to encrypt your data while it is transmitted when you take certain steps.");
+				$("#encrypt-transit-button").html("<img src='graphics/encrypt-transit.png' alt=''>Encrypted<br>while transmitted<br>when you ...");
+	   			$("#encrypt-transit-instructions").show();
+ 				if ($("#transit-encryption-yes-optin-steps").val()){
+				$("#encrypt-transit-details").text($("#transit-encryption-yes-optin-steps").val());
+				transitEncryptComplete = true;}
+				}
+	   
+        		}
+      		}
+   	}
+
+
+if ($("#offdevice-encryption-yes").is(":checked")) // offdevice encryption is on
+	{$("#encrypt-offdevice-button").attr("title","This app or technology does use encryption to encrypt your data when stored on our company servers or with an outside cloud computing services provider");
+	 $("#encrypt-offdevice-button").html("<img src='graphics/encrypt-offdevice.png' alt=''>Encrypted<br>on servers or<br>cloud computing<span class='glyphicon glyphicon-cloud-download' aria-hidden='true' style='display:inline;'></span><br>by default");
+ offdeviceEncryptComplete = true;
+ 	}
+	else 
+  	{if ($("#offdevice-encryption-no").is(":checked"))// offdevice encryption is off   
+    		{$("#encrypt-offdevice-button").attr("title","This app or technology does NOT use encryption to encrypt your data when stored on our company servers or with an outside cloud computing services provider");
+		$("#encrypt-offdevice-button").html("<img src='graphics/store-offdevice.png' alt=''>Not encrypted<br>on servers or<br>cloud computing<span class='glyphicon glyphicon-cloud-download' aria-hidden='true' style='display:inline;'></span>");
+ 	offdeviceEncryptComplete = true;
+    		} 
+   		else 
+     		{if ($("#offdevice-encryption-na").is(":checked"))// offdevice encryption is not applicable
+       			{$("#encrypt-offdevice-button").hide();
+ 			offdeviceEncryptComplete = true;			
+			encryptNA ++;
+			$("#cloud-computing-definition").hide();
+			}
+      			 else
+			{if ($("#offdevice-encryption-yes-optin").is(":checked"))	  // offdevice encryption is optin
+ 				{$("#encrypt-offdevice-button").attr("title","This app or technology does use encryption to encrypt your data when stored on our company servers or with an outside cloud computing services provider when you take certain steps.");
+				$("#encrypt-offdevice-button").html("<img src='graphics/encrypt-offdevice.png' alt=''>Encrypted<br>on servers or<br>cloud computing<span class='glyphicon glyphicon-info-sign' aria-hidden='true' style='display:inline;'></span><br>when you ...");
+	   			$("#encrypt-offdevice-instructions").show();
+ 				if ($("#offdevice-encryption-yes-optin-steps").val()){
+				$("#encrypt-offdevice-details").text($("#offdevice-encryption-yes-optin-steps").val());
+				offdeviceEncryptComplete = true;}
+				}
+        		}
+      		}
+   	}
+
+
+
+if ($("#MPN-ENCRYPT-incomplete").length == 0){
+	$("#MPN-ENCRYPT").prepend("<div class='col-xs-12 label label-danger' id='MPN-ENCRYPT-incomplete'><h1>Section Incomplete</h1></div>");
+	}
+
+if (encryptNA == 3)
+{$("#encrypt-notapplicable-image").show();}
+else {$("#encrypt-notapplicable-image").hide();}
+
+if (ondeviceEncryptComplete && offdeviceEncryptComplete && transitEncryptComplete) {$("#MPN-ENCRYPT-incomplete").remove();}
+// End ENCRYPT
+// PRIVACY
+var device_complete = false;
+var socialmedia_complete = false;
+$("#it-connects-to").hide();
+$("#it-connects-to-mpn").hide();
+$("#privacy-instructions").hide();
+$("#socialmedia-instructions").hide();
+$("#privacy-not").hide();
+$("#socialmedia-not").hide();
+$("#socialmedia-permission-text").hide();
+$("#privacy-permission-text").hide();
+$("#privacy-other-image").hide()
+
+if ($("#socialmedia-yes").is(":checked")) 
+	{
+ 		$("#socialmedia-details").html(linkifyStr($("#socialmedia-settings").val(),options)) ;
+	   	$("#socialmedia-instructions").show();
+		 if ($("#socialmedia-settings").val()){socialmedia_complete = true;}
+	}
+if ($("#socialmedia-permission").is(":checked")) 
+	{
+ 		$("#socialmedia-details").html(linkifyStr($("#socialmedia-settings").val(),options)) ;
+	  	 $("#socialmedia-instructions").show();
+	   	$("#socialmedia-permission-text").show();
+		 if ($("#socialmedia-settings").val()){socialmedia_complete = true;}
+	}
+if ($("#socialmedia-no").is(":checked")) 
+	{	
+		$("#socialmedia-not").show();
+		socialmedia_complete = true;
+	}
+
+if ($("#device-access-yes").is(":checked")) 
+	{
+	$("#privacy-connects").show();
+	$("#privacy-details").html(linkifyStr($("#privacy-settings").val(),options)) ;
+	$("#privacy-instructions").show();
+	$("#it-connects-to").show();
+	$("#it-connects-to-mpn").show();
+	device_complete = true;
+}
+if ($("#device-access-permission").is(":checked")) 
+	{
+	$("#privacy-connects").show();
+	$("#privacy-details").html(linkifyStr($("#privacy-settings").val(),options)) ;
+	$("#privacy-instructions").show();
+	$("#it-connects-to").show();
+	$("#it-connects-to-mpn").show();
+	$("#privacy-permission").show();
+	device_complete = true;
+
+}
+if ($("#device-access-no").is(":checked")) 
+	{
+	$("#privacy-not").show();
+	$("#privacy-camera").hide();
+	$("#privacy-photos").hide();
+	$("#privacy-contacts").hide();
+	$("#privacy-microphone").hide();
+	$("#privacy-device").hide();
+	$("#privacy-location").hide(); 
+	$("#privacy-other").hide();
+	device_complete = true; 
+	}
+else {
+	var access_counter=0;
+	if ($("#access-camera").is(":checked")) {$("#privacy-camera").show(); access_counter++;} else {$("#privacy-camera").hide();}
+	if ($("#access-photos").is(":checked")) {$("#privacy-photos").show(); access_counter++;} else {$("#privacy-photos").hide();}
+	if ($("#access-contacts").is(":checked")) {$("#privacy-contacts").show(); access_counter++;} else {$("#privacy-contacts").hide();}
+	if ($("#access-microphone").is(":checked")) {$("#privacy-microphone").show(); access_counter++;} else {$("#privacy-microphone").hide();}
+	if ($("#access-device").is(":checked")) {$("#privacy-device").show(); access_counter++;} else {$("#privacy-device").hide();}
+	if ($("#access-location").is(":checked")) {$("#privacy-location").show(); access_counter++;} else {$("#privacy-location").hide();}
+	if ($("#access-other").is(":checked"))
+	{
+	$("#privacy-other").show();
+	$("#privacy-other-text").html("");
+	$("input[id^='privacy-other-freeform']").each(function(index)
+	{
+	if ($(this).val())
+		{
+		if (access_counter !=0)  {$("#privacy-other-image").show();}
+		$("#privacy-other-text").append("<li>"+linkifyStr($(this).val(),options)+"</li>");
+		}
+	});
+	access_counter++; 
+	//$("#privacy-other-text").append("</ul>");
+	}
+	else {$("#privacy-other").hide(); }
+}
+
+if ($("#MPN-PRIVACY-incomplete").length == 0){
+	$("#MPN-PRIVACY").prepend("<div class='col-xs-12 label label-danger' id='MPN-PRIVACY-incomplete'><h1>Section Incomplete</h1></div>");
+	}
+
+if (device_complete && socialmedia_complete) {$("#MPN-PRIVACY-incomplete").remove();}
+
+
+// End PRIVACY
+// OPTIONS
+var options_complete = false;
+ $("#options-details").html(linkifyStr($("#options-settings").val(),options)) ;
+$("#options-instructions").hide();
+
+if ($("#options-access-checkbox").is(":checked")) 
+	{$("#options-access").show();
+	$("#options-instructions").show();
+	$("#options-none-checkbox").prop('checked', false);
+	$("#options-none-checkbox").button("refresh");
+	options_complete = true; 
+}
+ else
+	{$("#options-access").hide();}
+
+if ($("#options-edit-checkbox").is(":checked")) 
+	{$("#options-edit").show();
+  	$("#options-instructions").show();
+	$("#options-none-checkbox").prop('checked', false);
+	$("#options-none-checkbox").button("refresh");
+	options_complete = true; 
+	}
+ else
+	{$("#options-edit").hide();}
+
+if ($("#options-share-checkbox").is(":checked")) 
+	{$("#options-share").show();
+ 	$("#options-instructions").show();
+	$("#options-none-checkbox").prop('checked', false);
+	$("#options-none-checkbox").button("refresh");	
+	options_complete = true; 
+	}
+ else
+	{$("#options-share").hide();}
+
+if ($("#options-delete-checkbox").is(":checked")) 
+	{$("#options-delete").show();
+  	$("#options-instructions").show();
+	$("#options-none-checkbox").prop('checked', false);
+	$("#options-none-checkbox").button("refresh");
+	options_complete = true; 
+	}
+ else
+	{$("#options-delete").hide();}
+
+if ($("#options-none-checkbox").is(":checked")){	
+	options_complete = true;
+	$("#options-access").hide();
+	$("#options-edit").hide();
+	$("#options-share").hide();
+	$("#options-delete").hide();
+	 }
+
+if ($("#MPN-OPTIONS-incomplete").length == 0){
+	$("#MPN-OPTIONS").prepend("<div class='col-xs-12 label label-danger' id='MPN-OPTIONS-incomplete'><h1>Section Incomplete</h1></div>");
+	}
+if (options_complete == true ) {$("#MPN-OPTIONS-incomplete").remove();}
+// End OPTIONS
+// DEACTIVATION
+var deactivation_complete=false;
+//$("#deactivation-label").html("<span class='label label-info'>Not Applicable</span>");
+
+
+if ($("#deactivation-immediate").is(":checked")) 
+	{$("#deactivation-label").html("deleted Immediately");
+	deactivation_complete=true;}
+if ($("#deactivation-time").is(":checked")) 
+	{$("#deactivation-label").html("deleted after "+$("#deactivation-period").val());
+	if ($("#deactivation-period").val().length) {deactivation_complete=true;}
+	}
+if ($("#deactivation-request").is(":checked")) 
+	{$("#deactivation-label").html("retained and used until you request deletion");
+	deactivation_complete=true;}
+if ($("#deactivation-permanent").is(":checked")) 
+	{$("#deactivation-label").html("permanently retained and used");
+	deactivation_complete=true;}
+
+
+	
+	
+	
+if ($("#MPN-DEACTIVATION-incomplete").length == 0){
+	$("#MPN-DEACTIVATION").prepend("<div class='col-xs-12 label label-danger' id='MPN-DEACTIVATION-incomplete'><h1>Section Incomplete</h1></div>");
+	}
+if (deactivation_complete == true ) {$("#MPN-DEACTIVATION-incomplete").remove();}
+// End DEACTIVATION
+// POLICY
+var policy_complete = false;
+$("#policy-change").html(linkifyStr($("#policy-change-entry").val(),options));
+
+	if ($("#policy-change-entry").val().length) {policy_complete=true;}
+
+if ($("#MPN-POLICY-incomplete").length == 0){
+	$("#MPN-POLICY").prepend("<div class='col-xs-12 label label-danger' id='MPN-POLICY-incomplete'><h1>Section Incomplete</h1></div>");
+	}
+if (policy_complete == true ) {$("#MPN-POLICY-incomplete").remove();}
+// End POLICY
+// BREACH
+var breach_complete = false;
+	if ($("#breach-entry").val().length) {breach_complete=true;}
+	$("#breach").html(linkifyStr($("#breach-entry").val(),options));
+if ($("#MPN-BREACH-incomplete").length == 0){
+	$("#MPN-BREACH").prepend("<div class='col-xs-12 label label-danger' id='MPN-BREACH-incomplete'><h1>Section Incomplete</h1></div>");
+	}
+if (breach_complete == true ) {$("#MPN-BREACH-incomplete").remove();}
+// End BREACH
+// Contact US
+var contact_complete=false;
+$("#contact-us").html(
+	linkifyStr($("#companyname").val(),options)+'<br>'+
+	linkifyStr($("#companyaddress").val(),options)+'<br><br>'+
+
+	'<strong>Privacy policy:&nbsp;</strong>'+linkifyStr($("#privacypolicy").val(),options)+'<br>'+
+	'<strong>Contact Form:&nbsp;</strong>' + linkifyStr($("#contactform").val(),options)+'<br>'+
+	'<strong>Email:&nbsp;</strong>' + linkifyStr($("#emailaddress").val(),options)+'<br>'+
+	'<strong>Phone:&nbsp;</strong>' + linkifyStr($("#phonenumber").val(),options)
+);
+if ($("#MPN-Contact-incomplete").length == 0){
+	$("#MPN-CONTACT").prepend("<div class='col-xs-12 label label-danger' id='MPN-Contact-incomplete'><h2>Section Incomplete</h2></div>");
+	}
+if ($("#companyname").val()
+	&& $("#companyname").val()
+	&& $("#companyaddress").val()
+	&& $("#privacypolicy").val()
+	&& $("#contactform").val()
+	&& $("#emailaddress").val()
+	&& $("#phonenumber").val()
+	) {$("#MPN-Contact-incomplete").remove();}
+// End Contact US
+
+
+
+
+
+	var code = $('#MPN-copy').html();
+	$('#code').val($('#code-head').val()+code+"<script>$(document ).tooltip();<"+"/script>");
+  	event.preventDefault();
+});
+
+
+
+
+  $( function() {
+  	$( "input:radio" ).checkboxradio({icon:false});
+ 	$( document ).tooltip();
+	$( "input:checkbox" ).checkboxradio({icon:false});
+  } );
+
+
+
+
+$( "input" ).change(function( event ) {
+	$( "#MPN-generator" ).submit();
+});
+$( "textarea" ).change(function( event ) {
+	$( "#MPN-generator" ).submit();
+});
+$( "#MPN-condense" ).click(function( event ) {
+	$( "#MPN-generator" ).submit();
+	$( ".match-large").removeClass('match-large');
+	$( ".match-medium").removeClass('match-medium');
+	$( ".match").removeClass('match');
+	window.scrollTo(0, 950);	
+});
+
+// Let's get this party started
+$("#MPN-generator").submit();
+
+</script>
+</div>
+</body>
+</html>
+
+
+
