@@ -1,6 +1,7 @@
 # MPN-Challenge
 This is the model privacy notice (MPN) generator, written in jQuery UI and Bootstrap. This MPN generator was developed by R. Jason Cronk (of Enterprivacy Consulting Group) and Daniel Solove (of TeachPrivacy)
 
+An example of a generated MPN is available at http://www.enterprivacy.com/mpn-example.html
 
 Relevant Links
 https://www.healthit.gov/policy-researchers-implementers/model-privacy-notice-mpn
